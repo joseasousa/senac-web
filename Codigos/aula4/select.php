@@ -14,14 +14,15 @@
 		<option value=i7>i7</option>
 		<option selected>AMD</option>
 	</select>
-	<br><br>
+	<br>
+	<br>
 	<B>Livros que deseja comprar?</B><br>
 	Obs: segure "CTRL" para selecionar mais de um.<br>
-	<select name="livros[]" multiple>
-		<option value="Biblia do PHP">Biblia do PHP</option>
-		<option value="PHP Professional">PHP Professional</option>
-		<option value="Iniciando em PHP">Iniciando em PHP</option>
-		<option value="Biblia do MySQL">Biblia do MySQL</option>
+	<select name="processadores[]" multiple>
+		<option value=i3>core i3</option>
+		<option value=i5>i5</option>
+		<option value=i7>i7</option>
+		<option selected>AMD</option>
 	</select>
 	<br>
 	<input type="submit">
@@ -32,16 +33,18 @@
 	$proc = $_GET["processador"];
 	echo "<br><h1>".$proc."</h1>";
 	}
-	//isset verifica se foi selecionado pelomenos 1 elemento
-	if(isset($_GET["livros"])) {
-		echo "O(s) livro(s) que você deseja comprar:<br>";
-		// Faz loop para os livros
-		foreach($_GET["livros"] as $livro){
-			echo "- " . $livro . "<br>";
+	//isset verifica se foi selecionado 
+	//pelomenos 1 elemento
+	if(isset($_GET["processadores"])) {
+		echo "O(s) processadores(s) que 
+		você deseja comprar:<br>";
+		// Faz loop para os processadores		
+		foreach($_GET["processadores"] as $pro){			
+			echo "- " . $pro . "<br>";
 		}
 	}
 	else{
-		echo "Você não escolheu nenhum livro!";
+		echo "Você não escolheu nenhum!";
 	}
 	
 	?>
