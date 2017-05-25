@@ -16,8 +16,8 @@
 	if($_GET){
 		$raio = $_GET["raio"];
 		$diametro=2*$raio;
-		$circu=0;
-		$compri=0;
+		$circu=2*3.14*$raio;
+		$compri=2*3.14*$raio;
 		$area=3.14*($raio *$raio);
 		echo "o diametro é: ".$diametro;
 		echo "<br> a cirduferencia é de :".$circu;
