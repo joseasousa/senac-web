@@ -24,12 +24,13 @@
 <select name="proce">
 
 <?php
-	$pro = array("amd","i3","i5","i7","core 2 duo");
+	$pro = array("amd","i3","i5",
+				"i7","core 2 duo");
 	foreach($pro as $item){
 		echo "<option>".$item."</option>";
 	}
 	
 ?>
-<select name="anos">
+</select>
 </body>
 </html>
