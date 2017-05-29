@@ -20,6 +20,8 @@
 		<li>2</li>
 	</ul>
 	</div>
+	
+	
 	<!-- div estilo corpo do texto -->
 	<div id="left" style="width:80%;float:left;padding:10px">
 	
