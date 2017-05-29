@@ -5,10 +5,14 @@
 		<meta charset="utf-8">
 	</head>
 	<body>
-	<div id="header" style="text-align:center;padding:5px;heigth:300px">
-		<h1 style="color:#8B4513">blue</h1>
+	<!-- div estilo cabeçalho -->
+	<div id="header" style="text-align:center; padding:5px; background-color:black; color: white">
+		<h1>Cabeçalho</h1>
 	</div>
-	<div style="background-color:#eee;line-height:30px;width:100px;weigth:300px;float:left;padding:5px">
+	
+	<!-- div estilo barra lateral -->
+	<div style="line-height:30px; background-color:#eee; 
+	widht:30%; height:100%;float:left;padding:5px">
 	<ul>
 		<li>1</li>
 		<li>3</li>
@@ -16,7 +20,9 @@
 		<li>2</li>
 	</ul>
 	</div>
-	<div id="left" style="width:350px;float:left;padding:10px">
+	<!-- div estilo corpo do texto -->
+	<div id="left" style="width:80%;float:left;padding:10px">
+	
 	<h1 style="color:#8B4513">blue</h1>
 	
 	<div id="rigth" style="text-align:right;width:100px">
@@ -49,14 +55,6 @@
 <div id="footer" style="background-color:black;color:white;clear:both;text-align:center;padding:5px">
 pagina
 </div>
-
-<article>
-csfdsf 
-asdas
-</article>
-<aside>
-sdadsadasdas
-</aside>
 
 	</body>
 </html>
