@@ -9,7 +9,7 @@ $cities = array(
   array('city'=>'Cruzeiro do Sul','state'=>'AC','country'=>'BR'),
   array('city'=>'EpitaciolÃ¢ndia','state'=>'AC','country'=>'BR'),
   array('city'=>'FeijÃ³','state'=>'AC','country'=>'BR'),
-  array('city'=>'JordÃ£o','state'=>'AC','country'=>'BR'),
+  array('city'=>'Jordão','state'=>'AC','country'=>'BR'),
   array('city'=>'MÃ¢ncio Lima','state'=>'AC','country'=>'BR'),
   array('city'=>'Manoel Urbano','state'=>'AC','country'=>'BR'),
   array('city'=>'Marechal Thaumaturgo','state'=>'AC','country'=>'BR'),
