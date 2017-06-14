@@ -20,6 +20,7 @@
 	
 	<div class="container">
 		<form >
+			<div class="col-md-6"> 
 			<div class="form-group">
 				<input class="form-control" type="text" name="nome" placeholder="digite seu nome">
 			</div>
@@ -32,6 +33,8 @@
 			<div class="form-group">
 				<input class="form-control" type="text" name="endereco" placeholder="digite o seu endereco">
 			</div>
+			</div>
+			<div class="col-md-6"> 
 			<div class="form-group">
 				<input class="form-control" type="text" name="usuario" placeholder="digite o seu usuario">
 			</div>
@@ -42,12 +45,16 @@
 				<input class="form-control" type="number" name="idade" placeholder="digite a sua idade">
 			</div>
 			<div class="form-group">
-				<select name="sexo">
+				<select name="sexo" class="form-control">
 					<option value="m">Masculino</option>
 					<option value="f">Feminino</option>
 				</select>
 			</div>
-			<input type="submit" class="btn btn-success">
+			</div> 
+			<div class="row">
+				<input type="submit" class="btn btn-success">
+			</div>
+			
 		</form>
 	</div>
 	<?php

@@ -57,14 +57,21 @@
 		<?php
 			include "banco.php";
 			include "tarefas.php";
+			include "libs.php";
 		
 			if($_GET){
 			$tarefa = array("nome"=> $_GET["nome"],
 			"descricao"=>$_GET["descricao"],
 			"prioridade"=>$_GET["prioridade"]);
 		
-				gravar_tarefa($conexao,$tarefa);
+			gravar_tarefa($conexao,$tarefa);
+			
+			
+			
+				
 			}
+			$tarefas = buscar_tarefas($conexao);
+			geraTabela($tarefas);
 		?>
 	</body>
 </html>
