@@ -8,7 +8,16 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">		
 	</head>
 	<body>
-	
+	<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Exercicio</a>
+				</div>
+			</div>
+		</nav>
+		<div>
+		
+		
 	<?php
 		include "banco.php";
 		include "libs.php";
@@ -17,5 +26,6 @@
 		$users = listar_usuarios($conexao);
 		geraTabela($users);
 	?>
+	</div>
 	</body>
 </html>

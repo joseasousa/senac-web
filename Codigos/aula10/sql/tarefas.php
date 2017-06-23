@@ -24,4 +24,21 @@
 	}
 		return $tarefas;
 	}
+	
+	function atualizar_tarefa($conexao, $tarefa){
+		$sql ="
+		UPDATE tarefas SET nome='{$tarefa["nome"]}',
+		descricao='{$tarefa["descricao"]}',
+		prioridade='{$tarefa["prioridade"]}' 
+		WHERE id = {$tarefa["id"]};
+		";
+		
+		mysqli_query($conexao, $sql);
+	}
+	
+	function deleta_tarefa($conexao, $id){
+		$sql = "DELETE FROM tarefas WHERE id ={$id}";
+	
+		mysqli_query($conexao, $sql);
+	}
 ?>

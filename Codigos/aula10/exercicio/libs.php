@@ -2,7 +2,8 @@
 
 	function geraTabela($rs)
 	{
-		$s = "<table class='table table-striped' >";
+		$s ="<div class='table-responsive'>";
+		$s .= "<table class='table table-striped'>";
 		$s .= "<tr>";
 
 			$s .= "<tr>";
@@ -23,14 +24,14 @@
 					$s .=  "<td>$t </td>";
 				}
 			}
-			$s .= "<td><input type='submit' class='btn btn-info' value='Update'></td>";
-			$s .= "<td><input type='submit' class='btn btn-danger' value='Delete'></td>";
+			$s .= "<td><a class='btn btn-info'>Update</a></td>";
+			$s .= "<td><a class='btn btn-danger'>Delete</a></td>";
 			$s .= "</tr>";
 		}
 
 
 
-		$s .= "</table>";
+		$s .= "</table></div>";
 
 		echo $s;
 	}

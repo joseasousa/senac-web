@@ -23,8 +23,8 @@
 					$s .=  "<td>$t </td>";
 				}
 			}
-			$s .= "<td><input type='submit' class='btn btn-info' value='Update'></td>";
-			$s .= "<td><input type='submit' class='btn btn-danger' value='Delete'></td>";
+			$s .= "<td><a class='btn btn-info' href='tarefaform.php?id={$data["id"]}&nome={$data["nome"]}&descricao={$data["descricao"]}&prioridade={$data["prioridade"]}'> Update </a></td>";
+			$s .= "<td><a class='btn btn-danger' href='delete.php?id={$data["id"]}'>Delete</a></td>";
 			$s .= "</tr>";
 		}
 
